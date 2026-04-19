@@ -17,6 +17,16 @@ class Student {
             cout << "Default Constructor called" << endl;
         }
 
+        // Parameterized Constructor
+        Student(int id, int age, string name, int nos) {
+            this->id = id;
+            this->age = age;
+            this->name = name;
+            this->nos = nos;
+            cout << "Parameterized Constructor called" << endl;
+        }
+
+
         // Beehaviour / Methods / Functions
 
         void study() {
@@ -44,7 +54,12 @@ int main() {
     A.age = 20;
     A.name = "John";
     A.nos = 5;
+    A.study();
 
+    Student B(2, 21, "Jane", 6);
+    B.play();
+
+    
     return 0;
 }
 
