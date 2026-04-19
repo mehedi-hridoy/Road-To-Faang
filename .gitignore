@@ -1,0 +1,87 @@
+# =========================
+# C / C++ build artifacts
+# =========================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.elf
+*.hex
+*.bin
+*.d
+*.gch
+*.pch
+
+# Common default output
+/a.out
+
+# Debug symbol bundles
+*.dSYM/
+
+# Build directories / tool outputs
+/build/
+/Build/
+/bin/
+/out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.cmake
+*.ninja
+.ninja_*
+
+# If you compile a single file with: g++ file.cpp -o 01_Student_Class
+# ignore that produced binary name specifically (already present in this repo)
+01_Student_Class
+
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# =========================
+# Editor / IDE
+# =========================
+# VS Code: keep shareable configs, ignore the rest
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+
+# JetBrains
+.idea/
+*.iml
+
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
