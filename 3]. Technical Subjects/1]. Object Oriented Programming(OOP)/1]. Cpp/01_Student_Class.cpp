@@ -25,6 +25,17 @@ class Student {
             this->nos = nos;
             cout << "Parameterized Constructor called" << endl;
         }
+        
+
+        // Copy Constructor
+        Student(const Student &s) {
+            this->id = s.id;
+            this->age = s.age;
+            this->name = s.name;
+            this->nos = s.nos;
+            cout << "Copy Constructor called" << endl;      
+        }
+
 
 
         // Beehaviour / Methods / Functions
@@ -59,6 +70,8 @@ int main() {
     Student B(2, 21, "Jane", 6);
     B.play();
 
+    Student C = A; // Copy Constructor is called
+    C.sleep();
     
     return 0;
 }
