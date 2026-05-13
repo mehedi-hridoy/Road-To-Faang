@@ -8,7 +8,9 @@ using namespace std;
 class Bird {
     public: 
           virtual void eat() = 0; // pure virtual function
-          virtual void fly() = 0; // pure virtual function    
+          virtual void fly() = 0; // pure virtual function   
+          
+          virtual ~Bird() {}  // VERY IMPORTANT: Virtual destructor to ensure proper cleanup of derived class objects through base class pointers
 
           // now this class becomes an interface 
 
